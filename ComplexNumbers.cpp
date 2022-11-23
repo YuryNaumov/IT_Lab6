@@ -2,7 +2,7 @@
 
 using namespace std;
 
-struct ComplexNumber
+struct CNumber
 {
     double Re;
     double Im;
@@ -13,7 +13,7 @@ struct ComplexNumber
 /// </summary>
 /// <param name="z">входящее комплексное число</param>
 /// <returns>модуль (длинна)</returns>
-double CN_Module(ComplexNumber z)
+double CN_Module(CNumber z)
 {
     return sqrt(z.Re * z.Re + z.Im * z.Im);
 }
@@ -24,7 +24,7 @@ int main()
     //Включаем локализацию
     system("chcp 1251");
     //Создаем одно комплексное число
-    ComplexNumber z = { 1,1 };
+    CNumber z = { 1,1 };
     //Вывод числа в консоль
     cout << "Комплексное число z = " << z.Re << " + " << z.Im << "i" << endl;
     //Вывод его длины
